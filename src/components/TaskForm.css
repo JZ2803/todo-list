@@ -1,0 +1,39 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.app-header > form {
+    width: 60%;
+    border-bottom: 2px solid lightgrey;
+}
+
+.task-input {
+    width: 100%;
+    padding: 12px;
+}
+
+.task-form-bottom {
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tags-container {
+    display: flex;
+    flex: 0.35;
+    /* justify-content: space-between; */
+}
+
+.new-task-container {
+    display: flex;
+    flex: 0.33;
+    justify-content: space-between;
+}
+
+.task-status {
+    padding: 0px 10px;
+}

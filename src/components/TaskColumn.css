@@ -1,0 +1,16 @@
+.task-column {
+    width: 33.33%;
+    margin: 15px;
+  }
+
+.task-column > .heading > .icon {
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.task-column > .heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}

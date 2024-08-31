@@ -1,0 +1,14 @@
+.delete-button {
+    width: 15px;
+}
+
+.tags-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tags-card-bottom > .tags-container {
+    flex: 
+}
