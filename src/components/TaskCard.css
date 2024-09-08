@@ -2,13 +2,15 @@
     width: 15px;
 }
 
-.tags-card-bottom {
+.task-card-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-.tags-card-bottom > .tags-container {
-    flex: 
+.task-card-bottom > .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0.95
 }

@@ -9,7 +9,11 @@ const TaskColumn = (props) => {
             <img src={props.image} alt="Not started" className='icon'></img>
             <span className="has-text-weight-bold">{props.columnName}</span>
         </div>
-        <TaskCard />
+        {
+          props.tasks.map((task, index) =>
+            task.status == props.status && <TaskCard key={index} task={task} handleDelete={props.handleDelete} taskIndex={index}/>
+          )
+        }
     </section>
   )
 }

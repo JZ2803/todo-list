@@ -4,17 +4,17 @@ import './Tag.jsx'
 import deleteIcon from '../assets/trash-can-solid.svg'
 import Tag from './Tag.jsx'
 
-const TaskCard = () => {
+const TaskCard = (props) => {
   return (
     <article className="task-card box">
-      <h3 className="heading">Sample card</h3>
-      <div className="tags-card-bottom">
+      <h3 className="heading">{props.task.task}</h3>
+      <div className="task-card-bottom">
         <div className="tags-container">
-          <Tag tagName="Work"/>
-          <Tag tagName="Study"/>
-          <Tag tagName="Health"/>
+          {
+            props.task.tags.map((tag, index) => <Tag key={index} tagName={tag} selected={true} />)
+          }
         </div>
-        <div className="delete-button">
+        <div className="delete-button" onClick={() => props.handleDelete(props.taskIndex)}>
           <img src={deleteIcon} alt="Delete task"></img>
         </div>
       </div>
